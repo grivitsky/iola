@@ -618,6 +618,7 @@ button {
   padding: 0 30px;
 }
 
+
 .center.xl {
   max-width: 1172px;
   padding: 0 30px;
@@ -628,6 +629,7 @@ button {
   margin-top: 20px;
   border-radius: 8px;
   background: #fff;
+  display: inline-block;
 }
 
 .block:hover {
@@ -1291,7 +1293,7 @@ button {
 .title {
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.2;
   color: #0D1726;
@@ -2802,4 +2804,13 @@ button {
 {
     margin: 0 !important;
 }
+.container__big
+{
+    padding: 0 50px;
+    width: 100%;
+}
 
+.fs-18
+{
+    font-size: 18px;
+}
