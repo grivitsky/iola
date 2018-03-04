@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>IOLA Салон Красоты</title>
+  <title>F.A.Q.</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta name="theme-color" content="#fff">
@@ -27,18 +27,17 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" media="all" href="./assets/css/app.css">
   <link rel="stylesheet" media="all" href="./assets/css/letter-spacing.css">
+    
 </head>
 <body>
 <div class="out">
 
 <!-- bg-->
-<div class="bg">
-  <div class="bg__item fade-6 visible js-bg-item" style="background-image: url(./assets/img/bg.jpg);"></div>
-</div>
+<div class="bg white"></div>
 <!-- end bg -->
 
 <!-- header-->
-<header class="header fixed js-header">
+<header class="header white js-header">
   <div class="header__left" data-animate>
     <a class="header__logo" href="#">
       <img class="header__pic" src="./assets/img/circle.svg">
@@ -47,28 +46,23 @@
   </div>
   <div class="header__right" data-animate>
     <button class="header__burger js-header-burger">
-      <i class="material-icons material-icons-menu">menu</i>
-      <i class="material-icons material-icons-close">close</i>
+      <svg class="icon icon-burger">
+        <use xlink:href="./assets/img/sprite.svg#icon-burger"></use>
+      </svg>
+      <svg class="icon icon-close">
+        <use xlink:href="../img/sprite.svg#icon-close"></use>
+      </svg>
     </button>
     <div class="header__wrap">
       <div class="header__menu">
-
-        <!-- menu links-->
         <a class="header__link" href="#">Главная</a>
         <a class="header__link" href="#">Работы</a>
-        <a class="header__link" href="prices.html">Цены</a>
+        <a class="header__link" href="#">Цены</a>
         <a class="header__link" href="#">Продукция</a>
         <a class="header__link" href="#">Контакты</a>
-        <!-- end menu links -->
-
-        <!-- btn for mobile version-->
-        <a class="header__link hide" href="#">Записаться</a></div>
-        <!-- end btn for mobile version-->
-
-      <!-- btn for desktop version-->
-      <button class="header__btn btn blue rounded" data-wave href="#">Записаться</button>
-      <!-- end btn for desktop version-->
-
+        <a class="header__link hide" href="#">Записаться</a>
+      </div>
+      <a class="header__btn btn blue rounded" href="#">Записаться</a>
       <div class="header__container hide">
         <div class="header__item">
           <div class="text sm bold mb-5">Get one month trial</div>
@@ -86,98 +80,173 @@
 </header>
 <!-- end header -->
 
-<!-- wrapper-->
-<div class="wrapper">
-
 <!-- center -->
-<div class="center">
+<div class="center xl">
 
-    <div class="block inline arrow profile" data-animate>
-      <div class="ava" data-animate>
-        <img class="img" src="./assets/img/user.png">
-      </div>
-      <div class="container sm" data-animate>
-        <div class="text">Hey there, my name is Vladimir 🏄🏽</div>
-      </div>
-    </div>
-    
-    
-    <div class="block inline" data-animate>
-      <div class="container sm" data-animate>
-        <div class="text">We've built a tool that helps entrepreneurs, marketers, and designers to test the idea of their products faster.</div>
-          <button class="btn blue" data-wave data-animate>Get Started<i class="material-icons bold">arrow_forward</i></button>
-      </div>
-    </div>
-    
-    <div class="block inline arrow blue profile" data-animate>
-      <div class="system" data-animate>
-        <img class="system-pic" src="./assets/img/circle.svg">
-      </div>
-      <div class="container sm">
-        <div class="text mb-15" data-animate>Would you like to subscribe?</div>
-        <div class="group mb-15">
-          <div class="group-field" data-animate>
-            <div class="group-label mb-5">NAME</div>
-            <input class="group-input" placeholder="Enter your name">
-          </div>
-          <div class="group-field" data-animate>
-            <div class="group-label mb-5">EMAIL</div>
-            <input class="group-input" placeholder="Enter your email">
-          </div>
+<!-- content -->
+<div class="content" data-animate>
+  <h1>Цены</h1>
+  <div class="row padding">
+    <div class="col">
+      <h3>Стрижки</h3>
+        <div class="price__item row">
+          <div class="col">Мужская стрижка</div>
+          <div>10 руб.</div>
         </div>
-        <button class="btn rounded white wide mb-10" data-animate data-submit>
-          <span class="btn-title">Subscribe</span>
-          <span class="btn-check">
+        <div class="price__item row">
+          <div class="col">Женская стрижка</div>
+          <div>25 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Детская Стрижка</div>
+          <div>12 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Стрижка бороды</div>
+          <div>7 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Подравнивание</div>
+          <div>5 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Челка</div>
+          <div>3 руб.</div>
+        </div>
+    </div>
+    <div class="col">
+      <h3>Окрашивания</h3>
+      <div class="price__item row">
+          <div class="col">Короткие волосы</div>
+          <div>35 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Средние волосы</div>
+          <div>50 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Длинные волосы</div>
+          <div>70 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Очень длинные волосы</div>
+          <div>105 руб.</div>
+        </div>
+    </div>
+  </div>
+  <div class="row padding">
+    <div class="col">
+      <h3>Тонирование</h3>
+      <div class="price__item row">
+          <div class="col">Короткие волосы</div>
+          <div>25 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Средние волосы</div>
+          <div>30 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Длинные волосы</div>
+          <div>50 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Очень длинные волосы</div>
+          <div>85 руб.</div>
+        </div>
+    </div>
+    <div class="col">
+      <h3>Укладки</h3>
+        <div class="price__item row">
+          <div class="col">Укладка феном</div>
+          <div>15 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Локоны</div>
+          <div>17-23 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Прическа</div>
+          <div>17-35 руб.</div>
+        </div>
+    </div>
+  </div>
+  <div class="row padding">
+    <div class="col">
+      <h3>Манирюр</h3>
+        <div class="price__item row">
+          <div class="col">Укладка феном</div>
+          <div>15 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Локоны</div>
+          <div>17-23 руб.</div>
+        </div>
+        <div class="price__item row">
+          <div class="col">Прическа</div>
+          <div>17-35 руб.</div>
+        </div>
+    </div>
+    <div class="col">
+     
+    </div>
+  </div>
+
+  <!-- block 28-->
+  <div class="block arrow blue inline profile" data-animate>
+    <div class="system" data-animate>
+      <img class="system-pic" src="./assets/img/circle.svg">
+    </div>
+    <div class="container sm">
+      <div class="text mb-20" data-animate>Do you want to learn more?</div>
+      <div class="info sm uppercase bold mb-10" data-animate>CHOOSE AN OPTION</div>
+      <div class="btns">
+        <button class="button lg white" data-animate>
+          <span class="button-icon mb-5">
             <i class="material-icons">check</i>
           </span>
+          <span class="button-text">Yes, please</span>
         </button>
-        <div class="info opacity-70 align-center" data-animate>No charge. Unsubscribe anytime.</div>
+        <button class="button lg" data-animate="1">
+          <span class="button-icon mb-5">
+            <i class="material-icons">close</i>
+          </span>
+          <span class="button-text">No, thanks</span>
+        </button>
       </div>
     </div>
-            
+  </div>
+  <!-- end block 28 -->
+
+</div>
+<!-- end content -->
 
 </div>
 <!-- end center -->
 
-</div>
-<!-- end wrapper -->
-
-<!-- lightbox-->
-<div class="lightbox js-lightbox">
-  <button class="lightbox__close">
-    <i class="material-icons">close</i>
-  </button>
-  <div class="lightbox__wrap">
-    <img class="lightbox__img js-lightbox-img" src="">
-    <iframe class="lightbox__iframe js-lightbox-iframe" width="560" height="315" src="" frameborder="0" allowfullscreen autopley></iframe>
-  </div>
-</div>
-<!-- end lightbox -->
-
 <!-- footer-->
-<footer class="footer fixed js-footer">
-  <div class="footer__left" data-animate>
+<footer class="footer white">
+  <div class="footer__left">
     <div class="footer__menu">
       <a class="footer__link" href="#">Terms</a>
       <a class="footer__link" href="#">Privacy</a>
       <a class="footer__link" href="#">Refunds</a>
     </div>
-    <div class="footer__social social">
+    <div class="footer__social social black">
       <a class="social__link" href="#">
         <svg class="icon icon-facebook">
-          <use xlink:href="#icon-facebook"></use>
+          <use xlink:href="./assets/img/sprite.svg#icon-facebook"></use>
         </svg>
       </a>
       <a class="social__link" href="#">
         <svg class="icon icon-twitter">
-          <use xlink:href="#icon-twitter"></use>
+          <use xlink:href="./assets/img/sprite.svg#icon-twitter"></use>
         </svg>
       </a>
     </div>
   </div>
-  <div class="footer__right" data-animate>
+  <div class="footer__right">
     <div class="footer__copyright copyright">
-      <p>Made in California</p>
+      <p>Made in California.</p>
       <p>© FocFoc 2017</p>
     </div>
   </div>
